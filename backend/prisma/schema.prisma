@@ -14,6 +14,7 @@ model Technology {
   description String
   image       String
   highlight   Boolean @default(false)
+  projects    Project[]
 
   @@map("technologies")
 }
@@ -25,8 +26,9 @@ model Project {
   images      String[]
   level       Int
   type        String
-  hightlight  Boolean  @default(false)
+  highlight   Boolean  @default(false)
   repository  String
+  technologies Technology[]
 
   @@map("projects")
 }
