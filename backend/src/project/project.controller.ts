@@ -7,12 +7,12 @@ export class ProjectController {
 	constructor(private readonly repo: ProjectPrisma) {}
 
 	@Get()
-	async obterTodos(): Promise<Project[]> {
-		return this.repo.obterTodos()
+	async getAll(): Promise<Project[]> {
+		return this.repo.getAll()
 	}
 
 	@Get(":id")
-	async obterPorId(@Param("id") id: string): Promise<Project | null> {
-		return this.repo.obterPorId(Number(id))
+	async getPerId(@Param("id") id: string): Promise<Project | null> {
+		return this.repo.getPerId(Number(id))
 	}
 }

@@ -6,11 +6,11 @@ import { PrismaProvider } from "src/db/prisma.provider"
 export class TechnologyPrisma {
 	constructor(private readonly prisma: PrismaProvider) {}
 
-	async obterTodas(): Promise<Technology[]> {
+	async getAll(): Promise<Technology[]> {
 		return this.prisma.technology.findMany()
 	}
 
-	async obterDestaques(): Promise<Technology[]> {
+	async getHighlights(): Promise<Technology[]> {
 		return this.prisma.technology.findMany({
 			where: {
 				highlight: true,
