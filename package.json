@@ -1,24 +1,27 @@
 {
-    "name": "portfolio",
-    "version": "1.0.0",
-    "description": "",
-    "main": "src/index.ts",
-    "repository": {
-        "type": "git",
-        "url": "git+https://github.com/FelippeH/portfolio.git"
-    },
-    "keywords": [],
-    "author": "",
-    "license": "ISC",
-    "type": "commonjs",
-    "bugs": {
-        "url": "https://github.com/FelippeH/portfolio/issues"
-    },
-    "homepage": "https://github.com/FelippeH/portfolio#readme",
-    "dependencies": {
-        "@nestjs/common": "^11.0.11",
-        "@nestjs/core": "^11.0.11",
-        "@nestjs/platform-express": "^11.0.11",
-        "glob": "^11.0.1"
-    }
+	"name": "portfolio",
+	"version": "1.0.0",
+	"description": "Portfolio",
+	"main": "src/index.ts",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/FelippeH/portfolio.git"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"type": "commonjs",
+	"bugs": {
+		"url": "https://github.com/FelippeH/portfolio/issues"
+	},
+	"homepage": "https://github.com/FelippeH/portfolio#readme",
+	"dependencies": {
+		"@nestjs/common": "^11.0.11",
+		"@nestjs/core": "^11.0.11",
+		"@nestjs/platform-express": "^11.0.11",
+		"glob": "^11.0.1"
+	},
+	"scripts": {
+		"dev": "npx concurrently \"cd backend && npm run start:dev\" \"cd frontend && npm run dev\""
+	}
 }
