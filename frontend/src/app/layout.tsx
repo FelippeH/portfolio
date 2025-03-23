@@ -1,5 +1,5 @@
 import type { Metadata } from "next"
-import { Montserrat } from "next/font/google"
+import { Montserrat } from "next/font/google" // import da fonte
 import "./globals.css"
 
 export const metadata: Metadata = {
@@ -8,7 +8,7 @@ export const metadata: Metadata = {
 }
 
 const font = Montserrat({
-	subsets: ["latin"],
+	subsets: ["latin"], // adição da fonte principal do projeto
 })
 
 export default function RootLayout({
