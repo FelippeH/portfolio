@@ -1,0 +1,7 @@
+POST https://portfolio-3ng9.app.n8n.cloud/webhook/assistent
+Content-Type: application/json
+ 
+ {
+    "chatId": "1234567",
+    "message": ""
+ }
