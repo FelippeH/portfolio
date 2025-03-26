@@ -4,11 +4,11 @@ import Link from "next/link"
 
 export default function Header() {
 	return (
-		<header className="flex items-center h-16">
+		<header className="flex items-center h-14 bg-red-600">
 			<Container className="flex-1">
 				<div>
 					<Link href="/" className="hidden sm:block">
-						<Image src="/logo.svg" alt="Logo" width={80} height={0} />
+						<Image src="/f_logo.png" alt="Logo" width={50} height={0} />
 					</Link>
 				</div>
 			</Container>
