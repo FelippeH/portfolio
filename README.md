@@ -1,1 +1,2 @@
-Portfolio
+Projeto portfolio
+Status: em desenvolvimento
